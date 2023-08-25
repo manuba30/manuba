@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+header{
+    background-color:#232f3e; 
+    color:#fff; 
+    padding: 20px;    
+}
+#title1{
+text-align: center;
+font-size: 70px;
+color: orange;
+}
+header img{
+    max-width: 100px;
+    animation-name: brilho;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes brilho{
+    50%{box-shadow: 0px 0px 50px orange ;}
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#price{
+    text-align: center;
+}
+.dropdown{
+display: inline-block;
+}
+.dropdown button{
+    background-color: beige;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dropdown a{
+display: block;
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+}
+.dropdown .content{
+display: none;
+position: absolute;
+background-color: beige;
+min-width: 100px;
+box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color:goldenrod;
+}
+.dropdown  a:hover{
+    background-color:goldenrod ;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.product{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product img{
+    width: 1000px;
+    height: 300px;
+}
+.product h3{
+    margin: 10px 0;
+}
+.product p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#plano1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#plano2{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#plano3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+footer{
+    background-color: #232f3e;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.icons{
+text-align: right;
+}
+.icons a{
+    text-decoration: none;
+    padding: 20px;
+}
+.fa-brands.fa-twitter-5x{
+color:ghostwhite ;
+}
+.fa-brands.fa-twitter-5x :hover{
+    color: red;
+}

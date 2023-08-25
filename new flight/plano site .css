@@ -1,0 +1,38 @@
+#title{
+    text-align: center;
+}
+#search{
+    text-align: center;
+}
+.dropdown{
+display: inline-block;
+}
+.dropdown button{
+    background-color: beige;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+display: block;
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+}
+.dropdown .content{
+display: none;
+position: absolute;
+background-color: beige;
+min-width: 100px;
+box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color:goldenrod;
+}
+.dropdown  a:hover{
+    background-color:goldenrod ;
+}
