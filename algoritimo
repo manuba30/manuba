@@ -151,11 +151,85 @@ function mult(a)
     console.log(b)
 }
 mult(5)
+------------------------
+VERSAO CONSERTADA 6
+for(let i = 1;i!=11;i++)
+  {
+      console.log(i*5)
+  }
+
 --------------------
 lista exercicio 7
+INFUNCIONAL SEM O .LENGTH 
 
+function wor("a")
+{
+  let word = "a";
+  
+  for(let i = 0;i<=word;i++)
+    {
+      console.log(word[i]); 
+    }
+}
+wor("lixo")
+----------------------------
+VERSAO FUNCIONAL 7
+function long(word)
+{
+  let i = 0;
+  while(word[i]!=undefined)
+    {
+      i++;
+    }
+  return i;
+}
+long("lixo")
+------------------------------
+lista exercicio 8
+NAO FUNCIONA
+function mir(word)
+{
+  let a = word;
+  let b ="";
+  for(let i =0;i<=word[i];i++)
+    {
+      b = a[i]+b;
+     
+    }
+  return b;
+}
+mir("lixo")
+------------------
+VERSAO ARRUMADA 8
+function esp(word)
+{
+  let i = 0;
+  let b = "";
+  while(word[i]!==undefined)
+    {
+      b=word[i]+b;
+      i++;
+    }
+  return b;
+}
+esp("lixo")
+-------------------
+exercicio 9
 
+function esp(word)
+{
+  let i = 0;
+  let b = "";
+  while(word[i]!==undefined)
+    {
+      b=word[i]+b;
+      i++;
+    }
+  return b;
+}
+esp("lixo")
 
+----------------------------
 
 
 
