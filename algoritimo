@@ -120,5 +120,25 @@ calc(10,5,3)
 ---------------------------
 lista exercicio 5
 
+function bet(a)
+{
+  let num = a;
+for(let i = 1;i!=31;i++)
+  if(i===num)
+    {
+      console.log(i)
+    }
+   else(i>32)
+  {
+         console.log("impossivel")
+  }
+     
+}
+bet(32)
+---------------------
+lista exercicio 6
+
+
+
 
 
