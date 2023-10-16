@@ -137,6 +137,23 @@ for(let i = 1;i!=31;i++)
 bet(32)
 ---------------------
 lista exercicio 6
+ ERRADO    
+function mult(a)
+{
+  let num =a;
+  let b;
+  let tab = [1,2,3,4,5,6,7,8,9,10];
+  
+  for(let i=0;i>=tab[i];i++)
+    {
+      b= num * tab[i];
+    }
+    console.log(b)
+}
+mult(5)
+--------------------
+lista exercicio 7
+
 
 
 
