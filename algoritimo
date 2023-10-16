@@ -71,6 +71,21 @@ let b ;
 }
 
 pot(10)
+---------------
+CORREÇAO 
+function pot(a)
+{
+  
+
+let num =a;
+let b=0 ;
+
+  b = num ** 2;
+
+  return b;
+}
+
+console.log(pot(5))
 ----------------
 lista exercicio 3
 
@@ -412,6 +427,23 @@ return val;
 -------------------
 exercicio 17
 
+
+function receba(n)
+{
+  let tab =[];
+  let valor;
+  for(let i =0;i<n;i++)
+  {
+    for(let j =0;j<n;j++)
+   {
+    tab[j] = 0;
+   }
+   tab[i] = 0;
+
+  }
+console.log(tab)
+}
+receba(7)
 
 -----------------
 exercicio 18
