@@ -230,6 +230,89 @@ function esp(word)
 esp("lixo")
 
 ----------------------------
+exercicio 10 
+/*function retVoi(mot)
+{
+  let i = 0;
+  let b = "";
+  
+  while(mot[i]!=undefined)
+    {
+      if(mot[i]!="a" && mot[i]!="e" && mot[i]!="i" && mot[i]!="o" && mot[i]!="u" && mot[i]!="y")
+        {
+          b = b+ mot[i];
+        }
+      i++;
 
+    }
+  return b;
+}
+
+console.log(retVoi("abacaxi"))
+*/
+-----------------
+exercicio 11
+QUASE LA 
+
+function retVoi(mot)
+{
+  let i = 0;
+  let b = "";
+  let c = "";
+  
+  while(mot[i]!=undefined)
+    {
+      if(mot[i]!="a" && mot[i]!="e" && mot[i]!="i" && mot[i]!="o" && mot[i]!="u" && mot[i]!="y")
+        {
+          b = b+ mot[i];
+          
+        }
+      else
+      {
+        c = c+mot[i]
+        
+        
+      }
+      i++;
+
+    }
+  console.log(b,c)
+  //return c;
+}
+
+console.log(retVoi("abacaxi"))
+
+---------------------------
+exercicio 12
+ERRADO 
+function cont(mot,letr)
+{
+  let a = 0 ;
+  for(let i =0;mot[i]!==undefined;i++)
+    {
+      if(mot[i]===letr)
+        {
+          a++;
+        }
+    }
+  return a;
+}
+console.log("banana")
+--------------------
+exercicio 14
+MAIS OU MENOS 
+
+
+function rem(a)
+{
+  let rem = a;
+  let vid = [];
+ for(let i = 0;i!=10;i++)
+   {
+     rem = vid+rem[i]
+   }
+  return rem;
+}
+rem(0,1,2,3,4,5,6,7,8,9)
 
 
