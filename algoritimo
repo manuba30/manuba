@@ -463,5 +463,41 @@ somaDiagonais(
 
      [3,1,9,0,8]] )
    ---------------------------
+function miroir(mot) {
+  let i = 0;
+  let retour = "";
+
+  while (mot[i] !== undefined) {
+    retour = mot[i] + ' ' + retour;
+    i++;
+  }
+
+  return retour; // Usamos trim() para remover espaços em branco no início/fim.
+}
+
+function inv(tab) {
+  let esp = miroir;
+  let i = 0;
+  let som = 0;
+  let c = "";
+
+  while (tab[i] !== undefined) {
+    c += esp(tab[i]) + ' ';
+    i++;
+  }
+
+  return c;
+}
+
+ matrizInvertida = inv(
+  [
+    [0, 0, 0, 0],
+    [2, 1, 3, 4],
+    [5, 1, 0, 2],
+    [8, 0, 1, 0]
+  ]
+);
+
+console.log(matrizInvertida);
 
 
