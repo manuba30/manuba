@@ -153,9 +153,10 @@ function mult(a)
 mult(5)
 ------------------------
 VERSAO CONSERTADA 6
-for(let i = 1;i!=11;i++)
+a = window.prompt("escolha num")
+for(let i = 0;i!=11;i++)
   {
-      console.log(i*5)
+      console.log(i*a)
   }
 
 --------------------
@@ -224,10 +225,12 @@ function esp(word)
     {
       b=word[i]+b;
       i++;
+      if(b===word)
+        console.log("é uma palavra palindromica")
     }
   return b;
 }
-esp("lixo")
+esp("kayak")
 
 ----------------------------
 exercicio 10 
@@ -258,25 +261,19 @@ function retVoi(mot)
 {
   let i = 0;
   let b = "";
-  let c = "";
+  let c = 0;
   
   while(mot[i]!=undefined)
     {
       if(mot[i]!="a" && mot[i]!="e" && mot[i]!="i" && mot[i]!="o" && mot[i]!="u" && mot[i]!="y")
         {
-          b = b+ mot[i];
+          c++;
           
         }
-      else
-      {
-        c = c+mot[i]
-        
-        
-      }
       i++;
 
     }
-  console.log(b,c)
+  console.log(c)
   //return c;
 }
 
@@ -284,7 +281,7 @@ console.log(retVoi("abacaxi"))
 
 ---------------------------
 exercicio 12
-ERRADO 
+ 
 function cont(mot,letr)
 {
   let a = 0 ;
@@ -297,8 +294,8 @@ function cont(mot,letr)
     }
   return a;
 }
-console.log("banana")
---------------------
+cont("banana","a")
+---------------------
 exercicio 14
 MAIS OU MENOS 
 
